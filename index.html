@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Meet Dobariya</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Meet Dobariya.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Meet</span><br>Dobariya From India</h1>
+        </div>  
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/myImg.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I am 22 year old computer science student. As a computer science enthusiast, I am dedicated to solving complex problems and delivering innovative solutions.
+                     My portfolio showcases my technical skills in [insert technical skills], as well as my ability to collaborate and 
+                     communicate effectively on cross-functional teams. Whether it's developing efficient algorithms or creating user-friendly
+                     applications, I am constantly striving to enhance my skills and drive positive change through technology.
+                     Please take a look and see for yourself!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('cert')">Certificates</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        <li><span>Proficient Languages</span><br>Java, Python, C++</li>
+                        <li><span>DataBase</span><br>MySQL, SQL Server</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="cert">
+                    <ul>
+                        <li><span>Jan 2023</span><br><a href="https://www.freecodecamp.org/certification/fccc9f435e0-b766-4b4a-af92-b230067d99e4/responsive-web-design">Responsive Web Design</a></li>
+                        <li><span>Jan 2023</span><br><a href="https://www.typing.com/student/verify#230410498-141234209">Fast Typing Certificate</a></li>
+                        <li><span>Mar 2022</span><br><a href="https://www.linkedin.com/learning/certificates/a984fc4868495627860b325e52076eb4e7f5c69f28eca5cf8373d036ae98116e">Excel PivotTables: Mastering PivotTables and PivotChart </a></li>
+                        <li><span>Jan 2022</span><br><a href="https://www.linkedin.com/learning/certificates/413196444cf85c9baa95add82996bd79e1c2d0a740e811d0be293296eac1a3fe">Excel Essential Training (Office 365/Microsoft 365)</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - current</span><br><strong>Algoma University, Brampton, ON</strong><br>Bachelor of Computer Science</li>
+                
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Experienced in creating visually appealing and user-friendly websites, using tools such as HTML, CSS, and JavaScript.
+                   Proven track record of designing effective and responsive websites, that are compatible with multiple devices and web browsers.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Skilled in designing intuitive user interfaces and user experiences for web and mobile applications, using industry-standard tools and methodologies.
+                   Extensive experience in conducting user research, prototyping, and user testing to ensure the design solution meets the needs and expectations of the target audience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Proficient in designing visually appealing and user-friendly mobile applications for Android platforms.
+                   Experienced in creating wireframes, prototypes, and high-fidelity designs for mobile apps, ensuring an optimal user experience across different screen sizes and devices.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Relationship Advising Web </h3>
+                    <p>Working on it !!</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Musical App</h3>
+                    <p>Just for Design !!</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Just for Design !!</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> meet.dobariya2016@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +1 647-482-2812</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/meet.dobariya.50767?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/meet_dobariya28/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/meet__dobariya2812/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/meet-dobariya2812/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Meet Dobariya <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxdMNEkAIv0RpPXJNWBJ6vocKi-XwchcDcUi_sO6um0qfP1Mayol3XUNgyMPsY2cB3azA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
