@@ -203,25 +203,14 @@
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message sent successfully"
+            msg.innerHTML = "Message sent successfully...Thank You!"
             setTimeout(function(){
                 msg.innerHTML = ""
-            },100)
+            },5000)
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-  <!-- <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwwjdsQ5Uy9nc8408d2F2FWHdNb1UDgrIL8SfeVcS7RkVfG--KxIeYsZea9HXvbBUPnMw/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script> -->
 </body>
 </html>
