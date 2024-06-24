@@ -1,216 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio - Meet Dobariya</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/6a6e8a3aea.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-<div id="header">
-    <div class="container">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6a6e8a3aea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
         <nav>
-            <img src="images/Meet Dobariya.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
+          <img src="images/Meet Dobariya.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p style="color: aquamarine;">Full-Stack Developer</p>
-            <h1>Hi, I'm <span>Meet</span><br>Dobariya</h1>
-        </div>  
-    </div>
-</div>
-<!-- -----------about---------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/myImg.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I am a <b style="color: aquamarine;">Full Stack Developer</b> with over 3 years of expertise in Microsoft .NET Technologies. From Requirements Analysis to Maintenance, I excel in optimizing code and enhancing system performance. My skills extend to developing web applications using ASP.NET Core, Angular, and other modern frameworks. I am well-versed in SDLC methodologies, ensuring high-quality deliverables in Agile environments. With a strong foundation in RESTful APIs, database design, and front-end development, I bring a comprehensive approach to projects. My adaptability, problem-solving abilities, and commitment to continuous improvement make me an invaluable asset in delivering innovative solutions that exceed client expectations.</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('cert')">Certificates</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Proficient Languages</span><br>C# (.NET), JavaScript, TypeScript, ES6, Java, Python</li>
-                        <li><span>TaskManagement Tool</span><br>Microsoft Azure DevOps, Jira, Confluence</li>
-                        <li><span>DataBase Tools</span><br>SQL Server, MongoDB, MySQL</li>
-                        <li><span>Methodologies and Practices</span><br>SDLC (AgileScrum,Waterfall), CI/CD, SOLID Principles, TDD, DevOps Practices</li>
-                        <li><span>Web Development Framework and Technologies</span><br>HTML5, CSS3, NET framework 4.5+, ASP.NET MVC, ASP.NET Core, EF 6, EF Core, LINQ, WCF, jQuery, Angular2+, JSON, XML, AJAX, Node.js, Microservices</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="cert">
-                    <ul> 
-                        <li><span>Feb 2023</span><br><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Moreton%20Bay%20Regional%20Council/7q8DN5enMzSHqLwev_Moreton%20Bay%20Regional%20Council_2Ydr2yKRpQvQGsmo4_1675823371832_completion_certificate.pdf">Entrepreneurship & Innovation: Web Development Virtual Experience Program</a></li>
-                        <li><span>Feb 2023</span><br><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Two%20Sigma/NGKzzmd3iXM3rtQPq_Two%20Sigma_2Ydr2yKRpQvQGsmo4_1675734612530_completion_certificate.pdf">Professional Skills Development</a></li>
-                        <li><span>Jan 2023</span><br><a href="https://www.freecodecamp.org/certification/fccc9f435e0-b766-4b4a-af92-b230067d99e4/responsive-web-design">Responsive Web Design</a></li>
-                        <li><span>Jan 2023</span><br><a href="https://www.typing.com/student/verify#230410498-141234209">Fast Typing Certificate</a></li>
-                        <li><span>Jan 2022</span><br><a href="https://www.linkedin.com/learning/certificates/413196444cf85c9baa95add82996bd79e1c2d0a740e811d0be293296eac1a3fe">Excel Essential Training (Office 365/Microsoft 365)</a></li>
-                        <li><span>June 2019</span><br><a href="https://drive.google.com/file/d/12GGnVgypEfmiV7RWgB-BQl0sHHnu_scq/view?usp=drive_link">.Net Development Certificate</a></li>
-                       
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2021 - 2023</span><br><strong>Algoma University, Brampton, ON</strong><br>Bachelor of Computer Science</li>
-                
-                    </ul>
-                </div>  
-            </div>
+          <p style="color: aquamarine">Full-Stack Developer</p>
+          <h1>Hi, I'm <span>Meet</span><br />Dobariya</h1>
         </div>
+      </div>
     </div>
-</div>
-<!-- ---------services---------------- -->
-<div id="services">
-    <div class="container">
+    <!-- -----------about---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/myImg.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a <b style="color: aquamarine">Full Stack Developer</b>,
+              expertise in Microsoft .NET Technologies. From Requirements
+              Analysis to Maintenance, I excel in optimizing code and enhancing
+              system performance. My skills extend to developing web
+              applications using ASP.NET Core, Angular, and other modern
+              frameworks. I am well-versed in SDLC methodologies, ensuring
+              high-quality deliverables in Agile environments. With a strong
+              foundation in RESTful APIs, database design, and front-end
+              development, I bring a comprehensive approach to projects. My
+              adaptability, problem-solving abilities, and commitment to
+              continuous improvement make me an invaluable asset in delivering
+              innovative solutions that exceed client expectations.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('cert')">Certificates</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Proficient Languages</span><br />C# (.NET), JavaScript,
+                  TypeScript, ES6, Java, Python
+                </li>
+                <li>
+                  <span>TaskManagement Tool</span><br />Microsoft Azure DevOps,
+                  Jira, Confluence
+                </li>
+                <li>
+                  <span>DataBase Tools</span><br />SQL Server, MongoDB, MySQL
+                </li>
+                <li>
+                  <span>Methodologies and Practices</span><br />SDLC
+                  (AgileScrum,Waterfall), CI/CD, SOLID Principles, TDD, DevOps
+                  Practices
+                </li>
+                <li>
+                  <span>Web Development Framework and Technologies</span
+                  ><br />HTML5, CSS3, NET framework 4.5+, ASP.NET MVC, ASP.NET
+                  Core, EF 6, EF Core, LINQ, WCF, jQuery, Angular2+, JSON, XML,
+                  AJAX, Node.js, Microservices
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="cert">
+              <ul>
+                <li>
+                  <span>Feb 2023</span><br /><a
+                    href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Moreton%20Bay%20Regional%20Council/7q8DN5enMzSHqLwev_Moreton%20Bay%20Regional%20Council_2Ydr2yKRpQvQGsmo4_1675823371832_completion_certificate.pdf"
+                    >Entrepreneurship & Innovation: Web Development Virtual
+                    Experience Program</a
+                  >
+                </li>
+                <li>
+                  <span>Feb 2023</span><br /><a
+                    href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Two%20Sigma/NGKzzmd3iXM3rtQPq_Two%20Sigma_2Ydr2yKRpQvQGsmo4_1675734612530_completion_certificate.pdf"
+                    >Professional Skills Development</a
+                  >
+                </li>
+                <li>
+                  <span>Jan 2023</span><br /><a
+                    href="https://www.freecodecamp.org/certification/fccc9f435e0-b766-4b4a-af92-b230067d99e4/responsive-web-design"
+                    >Responsive Web Design</a
+                  >
+                </li>
+                <li>
+                  <span>Jan 2023</span><br /><a
+                    href="https://www.typing.com/student/verify#230410498-141234209"
+                    >Fast Typing Certificate</a
+                  >
+                </li>
+                <li>
+                  <span>Jan 2022</span><br /><a
+                    href="https://www.linkedin.com/learning/certificates/413196444cf85c9baa95add82996bd79e1c2d0a740e811d0be293296eac1a3fe"
+                    >Excel Essential Training (Office 365/Microsoft 365)</a
+                  >
+                </li>
+                <li>
+                  <span>June 2019</span><br /><a
+                    href="https://drive.google.com/file/d/12GGnVgypEfmiV7RWgB-BQl0sHHnu_scq/view?usp=drive_link"
+                    >.Net Development Certificate</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - 2023</span><br /><strong
+                    >Algoma University, Brampton, ON</strong
+                  ><br />Bachelor of Computer Science
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------services---------------- -->
+    <div id="services">
+      <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fas fa-code"></i>
-                <h2>Web Application Development</h2>
-                <p>Utilizing my expertise in ASP.NET Core, Angular, and modern frameworks, I offer end-to-end web application development services. From Requirements Analysis to Maintenance, I ensure high-quality deliverables aligned with client needs, following Agile methodologies. My proficiency in RESTful APIs, database design, and front-end development ensures robust, scalable, and user-friendly web solutions.</p>
-            </div>
-            <div>
-                <i class="fas fa-crop-alt"></i>
-                <h2>Microservices Architecture</h2>
-                <p>I specialize in developing scalable and resilient microservices using ASP.NET Core. Leveraging my experience in N-Tier Architectures and cloud platforms like Microsoft Azure, I design and implement microservices that enhance system performance, promote code reusability, and facilitate seamless integration across applications.</p>
-            </div>
-            <div>
-                <i class="fab fa-app-store"></i>
-                <h2>Continuous Integration/Deployment</h2>
-                <p>I provide expertise in setting up CI/CD pipelines using tools like Azure DevOps and Jenkins. By automating build, test, and deployment processes, I ensure faster time-to-market, improved code quality, and efficient collaboration within development teams. My experience in version control with Git and project management skills adds value to achieving continuous integration and deployment goals effectively.</p>
-            </div>
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Application Development</h2>
+            <p>
+              Utilizing my expertise in ASP.NET Core, Angular, and modern
+              frameworks, I offer end-to-end web application development
+              services. From Requirements Analysis to Maintenance, I ensure
+              high-quality deliverables aligned with client needs, following
+              Agile methodologies. My proficiency in RESTful APIs, database
+              design, and front-end development ensures robust, scalable, and
+              user-friendly web solutions.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Microservices Architecture</h2>
+            <p>
+              I specialize in developing scalable and resilient microservices
+              using ASP.NET Core. Leveraging my experience in N-Tier
+              Architectures and cloud platforms like Microsoft Azure, I design
+              and implement microservices that enhance system performance,
+              promote code reusability, and facilitate seamless integration
+              across applications.
+            </p>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Continuous Integration/Deployment</h2>
+            <p>
+              I provide expertise in setting up CI/CD pipelines using tools like
+              Azure DevOps and Jenkins. By automating build, test, and
+              deployment processes, I ensure faster time-to-market, improved
+              code quality, and efficient collaboration within development
+              teams. My experience in version control with Git and project
+              management skills adds value to achieving continuous integration
+              and deployment goals effectively.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- ----------portfolio------------ -->
-<div id="portfolio">
-    <div class="container">
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+      <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>SAMPLE!!</h3>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>SAMPLE!!</h3>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>SAMPLE!!</h3>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>SAMPLE!!</h3>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3>SAMPLE!!</h3>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>SAMPLE!!</h3>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
             </div>
+          </div>
         </div>
         <!-- <a href="#" class="btn">See more</a> -->
+      </div>
     </div>
-</div>
-<!-- ----------contact------------- -->
-<div id="contact">
-    <div class="container">
+    <!-- ----------contact------------- -->
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>dobariymeet@gmail.com</p>
-                <p><i class="fas fa-phone-square-alt"></i> +1 647-482-2812</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/meet.dobariya.50767?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.twitter.com/meet_dobariya28/"><i class="fab fa-twitter-square"></i></a>
-                    <a href="http://www.instagram.com/meetdobariya_28"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/meet-dobariya2812/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/meetdobariya28"><i class="fab fa-github"></i></a>
-                </div>
-                <a href="images/Resume - Meet.pdf" download class="btn btn2">Download CV</a>
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>dobariymeet@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i> +1 647-482-2812</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/meet.dobariya.50767?mibextid=LQQJ4d"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.twitter.com/meet_dobariya28/"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+              <a href="http://www.instagram.com/meetdobariya_28"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/meet-dobariya2812/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/meetdobariya28"
+                ><i class="fab fa-github"></i
+              ></a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" id="name" name="Name" placeholder="Your Name" required>
-                    <input type="email" id="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+            <a href="images/Resume - Lvl.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-    </div>
-    <div class="copyright">
+      </div>
+      <div class="copyright">
         <p>Copyright © Meet Dobariya <i class="fas fa-heart"></i></p>
+      </div>
     </div>
-</div>
 
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-    }
+      }
+    </script>
 
-</script>
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
 
-<script>
-
-    var sidemeu = document.getElementById("sidemenu");
-
-    function openmenu(){
+      function openmenu() {
         sidemeu.style.right = "0";
-    }
-    function closemenu(){
+      }
+      function closemenu() {
         sidemeu.style.right = "-200px";
-    }
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwwjdsQ5Uy9nc8408d2F2FWHdNb1UDgrIL8SfeVcS7RkVfG--KxIeYsZea9HXvbBUPnMw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-</script>
-<script>
-    const scriptURL ='https://script.google.com/macros/s/AKfycbwwjdsQ5Uy9nc8408d2F2FWHdNb1UDgrIL8SfeVcS7RkVfG--KxIeYsZea9HXvbBUPnMw/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully...Thank You!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-</body>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully...Thank You!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
